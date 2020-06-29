@@ -1,0 +1,17 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t mzupnik/react-test -f ./client/Dockerfile.dev ./client
+
+script:
+  - docker run -e CI=true mzupnik/react-test npm tes
+
+after_success:
+  - docker build -t mzupnik/multi-client ./client
+  - docker build -t mzupnik/multi-nginx ./nginx
+  - docker build -t mzupnik/multi-server ./server
+  - docker build -t mzupnik/multi-worker ./worker
+
+language: generic

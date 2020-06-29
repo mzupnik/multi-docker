@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f4e3eaf-a45f-418c-b4c0-ec15a2075414" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/Dockerfile.dev" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/nginx/default.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/Fib.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/OtherPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +15,7 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/client" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1cjUBnuF7MppFbBhDGnpQ0gZxOD" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -58,7 +53,7 @@
       <workItem from="1592076619843" duration="1531000" />
       <workItem from="1592998543397" duration="53000" />
       <workItem from="1592998612661" duration="3059000" />
-      <workItem from="1593084247811" duration="4928000" />
+      <workItem from="1593084247811" duration="6799000" />
     </task>
     <servers />
   </component>
