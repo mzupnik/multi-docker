@@ -3,15 +3,24 @@ services:
   - docker
 
 before_install:
-  - docker build -t mzupnik/react-test -f ./client/Dockerfile.dev ./client
+  - docker build -t marekzupnik/react-test -f ./client/Dockerfile.dev ./client
 
 script:
-  - docker run -e CI=true mzupnik/react-test npm tes
+  - docker run -e CI=true marekzupnik/react-test npm tes
 
 after_success:
-  - docker build -t mzupnik/multi-client ./client
-  - docker build -t mzupnik/multi-nginx ./nginx
-  - docker build -t mzupnik/multi-server ./server
-  - docker build -t mzupnik/multi-worker ./worker
+  - docker build -t marekzupnik/multi-client ./client
+  - docker build -t marekzupnik/multi-nginx ./nginx
+  - docker build -t marekzupnik/multi-server ./server
+  - docker build -t marekzupnik/multi-worker ./worker
+# Log in to the docker CLI
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+# Take those images and push them to docker hub
+  - docker push marekzupnik/multi-client
+  - docker push marekzupnik/mulgi-nginx
+  - docker push marekzupnik/multi-server
+  - docker push marekzupnik/multi-worker
 
 language: generic
+
+
